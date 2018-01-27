@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="comli.example.c4q.jets.mainoptions.PlaybookOptions">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEFENSE"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="#2A433A"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFFENSE"
+        android:id="@+id/offense_button"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="301dp"
+        android:src="@drawable/defense"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2A433A"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="This Weeks Red Zone plays"
+/>
+
+
+
+</LinearLayout>
