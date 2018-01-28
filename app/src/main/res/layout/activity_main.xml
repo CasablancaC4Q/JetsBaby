@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/jetssssss"
-    tools:context="comli.example.c4q.jets.MainActivity">
+    tools:context="comli.example.c4q.jets.activities.MainActivity">
 
     <Button
         android:id="@+id/practice_button"

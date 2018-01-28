@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="comli.example.c4q.jets.DrillsActivity"
+    tools:context="comli.example.c4q.jets.activities.DrillsActivity"
     android:orientation="vertical">
 
     <TextView
@@ -27,19 +27,14 @@
         android:text="DFFENSE" />
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:src="@drawable/wr_drills_1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-android:text="@string/wrdrill"
-        android:textColor="#2A433A"
+<android.support.v7.widget.RecyclerView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/o_drills"
+    >
 
 
-        />
+</android.support.v7.widget.RecyclerView>
 
 
 </LinearLayout>

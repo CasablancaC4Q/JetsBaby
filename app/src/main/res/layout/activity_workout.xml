@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="comli.example.c4q.jets.WorkoutActivity">
+    tools:context="comli.example.c4q.jets.activities.WorkoutActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,10 +27,12 @@
         android:textColor="#2A433A"
 
         />
+<android.support.v7.widget.RecyclerView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/workoutre"
+    >
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="448dp"
-        android:src="@drawable/weight_training_poster"
-/>
+
+</android.support.v7.widget.RecyclerView>
 </LinearLayout>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="comli.example.c4q.jets">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,16 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".DrillsActivity" />
-        <activity android:name=".PlaybookActivity" />
-        <activity android:name=".PracticeActivity" />
-        <activity android:name=".WorkoutActivity" />
+        <activity android:name=".activities.MainActivity"></activity>
+        <activity android:name=".activities.DrillsActivity" />
+        <activity android:name=".activities.PlaybookActivity" />
+        <activity android:name=".activities.PracticeActivity" />
+        <activity android:name=".activities.WorkoutActivity" />
         <activity android:name=".mainoptions.PlaybookOptions" />
         <activity android:name=".mainoptions.PracticeOptions" />
-        <activity android:name=".mainoptions.Drills_Option" />
+        <activity android:name=".mainoptions.DrillsOption" />
         <activity android:name=".mainoptions.WorkoutOptions" />
         <activity android:name=".splashs.Splashbitch">
             <intent-filter>

@@ -24,17 +24,12 @@
         android:id="@+id/offense_button_practice"
         />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="261dp"
-        android:src="@drawable/defenseepla" />
+ <android.support.v7.widget.RecyclerView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/d_practice_plays"
+     />
 
-    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
- android:text="@string/defensepractice"
-        android:textColor="#2A433A"
 
-        />
 
 </LinearLayout>

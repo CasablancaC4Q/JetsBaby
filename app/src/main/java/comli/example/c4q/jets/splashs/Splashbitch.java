@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import comli.example.c4q.jets.MainActivity;
+import comli.example.c4q.jets.activities.MainActivity;
 import comli.example.c4q.jets.R;
 
 public class Splashbitch extends AppCompatActivity {
