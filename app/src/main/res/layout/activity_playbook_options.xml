@@ -27,10 +27,8 @@
 <android.support.v7.widget.RecyclerView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/o_playbook_options"
-    >
+    android:id="@+id/d_playbook_options"
 
-
-</android.support.v7.widget.RecyclerView>
+    />
 
 </LinearLayout>

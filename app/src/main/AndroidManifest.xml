@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity"></activity>
+        <activity android:name=".activities.MainActivity"> </activity>
         <activity android:name=".activities.DrillsActivity" />
         <activity android:name=".activities.PlaybookActivity" />
         <activity android:name=".activities.PracticeActivity" />
@@ -21,6 +21,7 @@
         <activity android:name=".mainoptions.DrillsOption" />
         <activity android:name=".mainoptions.WorkoutOptions" />
         <activity android:name=".splashs.Splashbitch">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

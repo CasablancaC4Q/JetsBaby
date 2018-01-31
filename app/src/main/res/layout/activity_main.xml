@@ -9,6 +9,13 @@
     android:background="@drawable/jetssssss"
     tools:context="comli.example.c4q.jets.activities.MainActivity">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
     <Button
         android:id="@+id/practice_button"
         android:layout_width="wrap_content"

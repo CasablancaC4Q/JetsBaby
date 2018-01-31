@@ -26,11 +26,13 @@ public class PlaybookOptions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playbook_options);
 
-        recyclerView = findViewById(R.id.d_practice_plays);
+        recyclerView = findViewById(R.id.d_playbook_options);
 
-//        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.HORIZONTAL,false));
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false);
-        recyclerView.setLayoutManager(linearLayoutManager);
+
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
+       // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false);
+       // recyclerView.setLayoutManager(linearLayoutManager);
 
 
         playArrayList = new ArrayList<>();

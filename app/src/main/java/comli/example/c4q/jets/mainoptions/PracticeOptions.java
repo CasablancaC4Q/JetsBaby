@@ -28,7 +28,7 @@ public class PracticeOptions extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.d_practice_plays);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.HORIZONTAL,false));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
 
         playArrayList = new ArrayList<>();
         Play playimage1, playimage2,  playimage3 , playimage4, playimage5;

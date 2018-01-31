@@ -24,9 +24,9 @@ public class WorkoutOptions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout_options);
 
-        recyclerView = findViewById(R.id.d_practice_plays);
+        recyclerView = findViewById(R.id.stretch_re);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.HORIZONTAL,false));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
 
         playArrayList = new ArrayList<>();
         Play playimage1, playimage2,  playimage3 , playimage4, playimage5;
