@@ -1,4 +1,4 @@
-package comli.example.c4q.jets.secondaryactivities;
+package comli.example.c4q.jets.defense;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,31 +12,37 @@ import java.util.ArrayList;
 
 import comli.example.c4q.jets.mainactivities.AdapterSon;
 import comli.example.c4q.jets.mainactivities.Play;
-import comli.example.c4q.jets.mainactivities.PracticeActivity;
+import comli.example.c4q.jets.offense.GameDayOffense;
 import comli.example.c4q.jets.R;
 
-public class PracticeOptions extends AppCompatActivity {
+public class GameDayDefense extends AppCompatActivity {
 
-    private Button offense;
-  private   RecyclerView recyclerView;
-    private ArrayList<Play>playArrayList;
+    private Button offense ;
+   private RecyclerView recyclerView;
+   private ArrayList<Play>playArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_practice_options);
+        setContentView(R.layout.activity_playbook_options);
 
-        recyclerView = findViewById(R.id.d_practice_plays);
+        recyclerView = findViewById(R.id.d_playbook_options);
+
+
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
+       // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false);
+       // recyclerView.setLayoutManager(linearLayoutManager);
+
 
         playArrayList = new ArrayList<>();
         Play playimage1, playimage2,  playimage3 , playimage4, playimage5;
 
         playimage1 = new Play();
-        playimage1.setURL("http://img.bleacherreport.net/img/article/media_slots/photos/001/517/569/8c945afe18d3059856f4d93a2608cdb5_crop_exact.png?h=533&w=800&q=70&crop_x=center&crop_y=top");
-        playimage1.setText("This is a basic curl-flat combo from the Broncos with tight end Julius Thomas removed from the core of the formation as the No. 1 receiver to the closed side. The Seahawks cornerbacks squeeze/funnel the curl routes and force Manning to target Welker on the underneath checkdown.");
-
+        playimage1.setURL("http://img.bleacherreport.net/img/article/media_slots/photos/001/517/570/27c2f35e71b704fac0de47bcd23c9e91_crop_exact.png?h=533&w=800&q=70&crop_x=center&crop_y=top");
+        playimage1.setText("With a two-high safety alignment (and corners in a press position), the defense will roll the coverage at the snap to create a three-deep look.\n" +
+                "\n" +
+                "To the closed side, the strong safety (SS) rolls to the deep outside third with the free safety (FS) moving to the deep middle of the field. To the open side, the cornerback (RC) drops to the outside third using a \"bail\" technique.");
 
         playimage2 = new Play();
         playimage2.setURL("http://img.bleacherreport.net/img/article/media_slots/photos/001/517/564/39faf4c8c70021db5b4227bab03dbf4d_crop_exact.png?h=533&w=800&q=70&crop_x=center&crop_y=top");
@@ -84,12 +90,13 @@ public class PracticeOptions extends AppCompatActivity {
         AdapterSon adapterSon = new AdapterSon(playArrayList);
         recyclerView.setAdapter(adapterSon);
 
-        Button defense = findViewById(R.id.offense_button_practice);
-        defense.setOnClickListener(new View.OnClickListener() {
+        Button offense = findViewById(R.id.offense_button);
+        offense.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newintent = new Intent(PracticeOptions.this, PracticeActivity.class);
-                startActivity(newintent);
+                Intent intent = new Intent(GameDayDefense.this, GameDayOffense.class);
+                startActivity(intent);
+
             }
         });
     }

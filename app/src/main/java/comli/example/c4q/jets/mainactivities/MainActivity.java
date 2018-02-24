@@ -14,10 +14,14 @@ import android.widget.Button;
 import java.util.Calendar;
 
 import comli.example.c4q.jets.R;
-import comli.example.c4q.jets.notify.Notification_receiver;
+import comli.example.c4q.jets.notifier.Notification_receiver;
+import comli.example.c4q.jets.offense.GameDayOffense;
+import comli.example.c4q.jets.offense.PlayBookOffense;
 import comli.example.c4q.jets.retrofitmodel.NewsAdapter;
 import comli.example.c4q.jets.retrofitmodel.NewsAPI;
 import comli.example.c4q.jets.retrofitmodel.NewsModel;
+import comli.example.c4q.jets.workouts.DrillsActivity;
+import comli.example.c4q.jets.workouts.WorkoutActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -133,10 +137,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     intent = new Intent(MainActivity.this, WorkoutActivity.class);
                     break;
                 case R.id.practice_button:
-                    intent = new Intent(MainActivity.this, PracticeActivity.class);
+                    intent = new Intent(MainActivity.this, PlayBookOffense.class);
                     break;
                 case R.id.playbook_button:
-                    intent = new Intent(MainActivity.this, PlaybookActivity.class);
+                    intent = new Intent(MainActivity.this, GameDayOffense.class);
                     break;
             }
             startActivity(intent);
@@ -157,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         playBookbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PlaybookActivity.class);
+                Intent intent = new Intent(MainActivity.this, GameDayOffense.class);
                 startActivity(intent);
             }
         });
@@ -166,7 +170,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         practiceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PracticeActivity.class);
+                Intent intent = new Intent(MainActivity.this, PlayBookOffense.class);
                 startActivity(intent);
             }
         });

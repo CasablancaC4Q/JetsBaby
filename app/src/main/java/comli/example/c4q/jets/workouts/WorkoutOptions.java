@@ -1,4 +1,4 @@
-package comli.example.c4q.jets.secondaryactivities;
+package comli.example.c4q.jets.workouts;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import comli.example.c4q.jets.R;
 import comli.example.c4q.jets.mainactivities.AdapterSon;
 import comli.example.c4q.jets.mainactivities.Play;
-import comli.example.c4q.jets.mainactivities.WorkoutActivity;
 
 public class WorkoutOptions extends AppCompatActivity {
     private Button weights;

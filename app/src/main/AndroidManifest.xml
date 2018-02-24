@@ -13,14 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".mainactivities.MainActivity"> </activity>
-        <activity android:name=".mainactivities.DrillsActivity" />
-        <activity android:name=".mainactivities.PlaybookActivity" />
-        <activity android:name=".mainactivities.PracticeActivity" />
-        <activity android:name=".mainactivities.WorkoutActivity" />
-        <activity android:name=".secondaryactivities.PlaybookOptions" />
-        <activity android:name=".secondaryactivities.PracticeOptions" />
-        <activity android:name=".secondaryactivities.DrillsOption" />
-        <activity android:name=".secondaryactivities.WorkoutOptions" />
+        <activity android:name=".workouts.DrillsActivity" />
+        <activity android:name=".offense.GameDayOffense" />
+        <activity android:name=".offense.PlayBookOffense" />
+        <activity android:name=".workouts.WorkoutActivity" />
+        <activity android:name=".defense.GameDayDefense" />
+        <activity android:name=".defense.DefensePlaybook" />
+        <activity android:name=".workouts.DrillsOption" />
+        <activity android:name=".workouts.WorkoutOptions" />
         <activity android:name=".splashs.Splashbitch">
 
 

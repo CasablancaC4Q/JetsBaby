@@ -1,4 +1,4 @@
-package comli.example.c4q.jets.mainactivities;
+package comli.example.c4q.jets.offense;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,9 +11,11 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 import comli.example.c4q.jets.R;
-import comli.example.c4q.jets.secondaryactivities.PracticeOptions;
+import comli.example.c4q.jets.mainactivities.AdapterSon;
+import comli.example.c4q.jets.mainactivities.Play;
+import comli.example.c4q.jets.defense.DefensePlaybook;
 
-public class PracticeActivity extends AppCompatActivity {
+public class PlayBookOffense extends AppCompatActivity {
 
     private Button defense;
    private RecyclerView recyclerView;
@@ -77,7 +79,7 @@ public class PracticeActivity extends AppCompatActivity {
         defense.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newintent = new Intent(PracticeActivity.this, PracticeOptions.class);
+                Intent newintent = new Intent(PlayBookOffense.this, DefensePlaybook.class);
                 startActivity(newintent);
             }
         });

@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="comli.example.c4q.jets.mainactivities.WorkoutActivity">
+    tools:context="comli.example.c4q.jets.workouts.WorkoutActivity">
 
     <TextView
         android:layout_width="wrap_content"

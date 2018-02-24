@@ -1,4 +1,4 @@
-package comli.example.c4q.jets.secondaryactivities;
+package comli.example.c4q.jets.workouts;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,9 +10,8 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 
-import comli.example.c4q.jets.mainactivities.AdapterSon;
-import comli.example.c4q.jets.mainactivities.DrillsActivity;
 import comli.example.c4q.jets.R;
+import comli.example.c4q.jets.mainactivities.AdapterSon;
 import comli.example.c4q.jets.mainactivities.Play;
 
 public class DrillsOption extends AppCompatActivity {

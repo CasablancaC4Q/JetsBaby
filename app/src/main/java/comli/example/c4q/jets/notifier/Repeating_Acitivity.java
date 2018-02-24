@@ -1,4 +1,4 @@
-package comli.example.c4q.jets.notify;
+package comli.example.c4q.jets.notifier;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
