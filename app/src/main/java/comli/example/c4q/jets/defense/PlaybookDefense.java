@@ -15,7 +15,7 @@ import comli.example.c4q.jets.mainactivities.Play;
 import comli.example.c4q.jets.offense.PlayBookOffense;
 import comli.example.c4q.jets.R;
 
-public class DefensePlaybook extends AppCompatActivity {
+public class PlaybookDefense extends AppCompatActivity {
 
     private Button offense;
   private   RecyclerView recyclerView;
@@ -24,7 +24,7 @@ public class DefensePlaybook extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_practice_options);
+        setContentView(R.layout.defense_drills);
 
         recyclerView = findViewById(R.id.d_practice_plays);
 
@@ -88,7 +88,7 @@ public class DefensePlaybook extends AppCompatActivity {
         defense.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newintent = new Intent(DefensePlaybook.this, PlayBookOffense.class);
+                Intent newintent = new Intent(PlaybookDefense.this, PlayBookOffense.class);
                 startActivity(newintent);
             }
         });

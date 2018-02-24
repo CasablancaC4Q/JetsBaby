@@ -3,7 +3,7 @@
     package="comli.example.c4q.jets">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -12,29 +12,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mainactivities.MainActivity"> </activity>
+        <activity android:name=".mainactivities.MainActivity"></activity>
         <activity android:name=".workouts.DrillsActivity" />
         <activity android:name=".offense.GameDayOffense" />
         <activity android:name=".offense.PlayBookOffense" />
         <activity android:name=".workouts.WorkoutActivity" />
         <activity android:name=".defense.GameDayDefense" />
-        <activity android:name=".defense.DefensePlaybook" />
+        <activity android:name=".defense.PlaybookDefense" />
         <activity android:name=".workouts.DrillsOption" />
         <activity android:name=".workouts.WorkoutOptions" />
         <activity android:name=".splashs.Splashbitch">
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".notifier.Repeating_Acitivity" />
 
-        <activity android:name=".mainactivities.Repeating_Acitivity"/>
+        <receiver android:name=".notifier.Notification_receiver" />
 
-        <receiver android:name=".mainactivities.Notification_receiver"/>
+        <activity android:name=".mainactivities.PositionSelect"></activity>
     </application>
 
 </manifest>

@@ -24,7 +24,7 @@ public class DrillsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drills);
+        setContentView(R.layout.offense_drills);
 
         recyclerView = findViewById(R.id.o_drills);
 

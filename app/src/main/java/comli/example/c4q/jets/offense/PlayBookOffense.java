@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import comli.example.c4q.jets.R;
 import comli.example.c4q.jets.mainactivities.AdapterSon;
 import comli.example.c4q.jets.mainactivities.Play;
-import comli.example.c4q.jets.defense.DefensePlaybook;
+import comli.example.c4q.jets.defense.PlaybookDefense;
 
 public class PlayBookOffense extends AppCompatActivity {
 
@@ -24,7 +24,7 @@ public class PlayBookOffense extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_practice);
+        setContentView(R.layout.playbook_offense);
 
         recyclerView = findViewById(R.id.o_practice_plays);
 
@@ -79,7 +79,7 @@ public class PlayBookOffense extends AppCompatActivity {
         defense.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newintent = new Intent(PlayBookOffense.this, DefensePlaybook.class);
+                Intent newintent = new Intent(PlayBookOffense.this, PlaybookDefense.class);
                 startActivity(newintent);
             }
         });

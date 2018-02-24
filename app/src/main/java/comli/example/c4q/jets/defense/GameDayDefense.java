@@ -24,7 +24,7 @@ public class GameDayDefense extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_playbook_options);
+        setContentView(R.layout.game_day_defenseeeeee);
 
         recyclerView = findViewById(R.id.d_playbook_options);
 
