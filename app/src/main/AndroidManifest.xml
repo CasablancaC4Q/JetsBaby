@@ -3,6 +3,7 @@
     package="comli.example.c4q.jets">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_ALARM"/>
 
     <application
         android:allowBackup="true"
@@ -11,23 +12,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity"> </activity>
-        <activity android:name=".activities.DrillsActivity" />
-        <activity android:name=".activities.PlaybookActivity" />
-        <activity android:name=".activities.PracticeActivity" />
-        <activity android:name=".activities.WorkoutActivity" />
-        <activity android:name=".mainoptions.PlaybookOptions" />
-        <activity android:name=".mainoptions.PracticeOptions" />
-        <activity android:name=".mainoptions.DrillsOption" />
-        <activity android:name=".mainoptions.WorkoutOptions" />
+        <activity android:name=".mainactivities.MainActivity"> </activity>
+        <activity android:name=".mainactivities.DrillsActivity" />
+        <activity android:name=".mainactivities.PlaybookActivity" />
+        <activity android:name=".mainactivities.PracticeActivity" />
+        <activity android:name=".mainactivities.WorkoutActivity" />
+        <activity android:name=".secondaryactivities.PlaybookOptions" />
+        <activity android:name=".secondaryactivities.PracticeOptions" />
+        <activity android:name=".secondaryactivities.DrillsOption" />
+        <activity android:name=".secondaryactivities.WorkoutOptions" />
         <activity android:name=".splashs.Splashbitch">
+
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".mainactivities.Repeating_Acitivity"/>
+
+        <receiver android:name=".mainactivities.Notification_receiver"/>
     </application>
 
 </manifest>

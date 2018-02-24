@@ -1,4 +1,4 @@
-package comli.example.c4q.jets.activities;
+package comli.example.c4q.jets.mainactivities;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

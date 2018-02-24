@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/jetssssss"
-    tools:context="comli.example.c4q.jets.activities.MainActivity">
+    tools:context="comli.example.c4q.jets.mainactivities.MainActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/main_recycler"
@@ -55,6 +55,7 @@
         android:background="#FFFFFF"
         android:text="Workout"
         android:textColor="#203731" />
+
 
 
 

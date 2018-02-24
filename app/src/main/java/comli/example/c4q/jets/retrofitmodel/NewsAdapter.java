@@ -3,7 +3,6 @@ package comli.example.c4q.jets.retrofitmodel;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,7 +59,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         return docs.size();
     }
 
-    public class ViewHolder extends comli.example.c4q.jets.activities.ViewHolder  {
+    public class ViewHolder extends comli.example.c4q.jets.mainactivities.ViewHolder  {
         TextView headline ;
         TextView snippet;
         ImageView newsImage;

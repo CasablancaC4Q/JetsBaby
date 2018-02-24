@@ -1,4 +1,4 @@
-package comli.example.c4q.jets.activities;
+package comli.example.c4q.jets.mainactivities;
 
 /**
  * Created by c4q on 1/27/18.

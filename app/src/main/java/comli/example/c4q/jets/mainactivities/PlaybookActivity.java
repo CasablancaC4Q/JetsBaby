@@ -1,4 +1,4 @@
-package comli.example.c4q.jets.activities;
+package comli.example.c4q.jets.mainactivities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 import comli.example.c4q.jets.R;
-import comli.example.c4q.jets.mainoptions.PlaybookOptions;
+import comli.example.c4q.jets.secondaryactivities.PlaybookOptions;
 
 public class PlaybookActivity extends AppCompatActivity {
 
@@ -28,7 +28,7 @@ public class PlaybookActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.o_playbook_plays);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.HORIZONTAL,false));
 
         playArrayList = new ArrayList<>();
         Play playimage1, playimage2,  playimage3, playimage4, playimage5;
